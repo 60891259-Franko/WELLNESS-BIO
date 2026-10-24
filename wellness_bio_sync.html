@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wellness & Bio-Sync</title>
+<style>
+:root{--navy:#15345b;--blue:#4778f5;--mint:#dff6ee;--green:#18866f;--lilac:#eeeaff;--pink:#ffe8ed;--gold:#fff1c9;--ink:#20324d;--muted:#6c7890;--line:#e4eaf2;--bg:#f5f8fc}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:11px 14px;font-weight:700;background:var(--blue);color:#fff}button.secondary{background:#edf2fa;color:var(--navy)}button.danger{background:#fff0f0;color:#b43b4b}.app{max-width:1150px;margin:auto;padding:20px}.hero{background:linear-gradient(120deg,#15345b,#2c608b);color:white;border-radius:24px;padding:26px;display:flex;justify-content:space-between;gap:20px;align-items:center;box-shadow:0 12px 30px #15345b1c}.brand{display:flex;gap:14px;align-items:center}.logo{height:54px;width:54px;border-radius:18px;background:#dff6ee;color:#16816f;display:grid;place-items:center;font-size:28px}.hero h1{margin:0;font-size:clamp(1.45rem,3vw,2.2rem)}.hero p{margin:7px 0 0;color:#d8e6f7}.hero-note{max-width:240px;color:#dff6ee;font-weight:600;text-align:right}.nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.nav button{background:#fff;color:#53637d;border:1px solid var(--line);flex:1;min-width:120px}.nav button.active{background:var(--navy);color:white}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.stat,.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 5px 18px #20324d08}.stat .label{font-size:.85rem;color:var(--muted)}.stat strong{display:block;font-size:1.7rem;margin-top:5px;color:var(--navy)}.layout{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.panel h2{font-size:1.2rem;margin:0 0 6px}.sub{color:var(--muted);font-size:.92rem;margin:0 0 16px}.formrow{display:grid;grid-template-columns:1fr 130px 130px;gap:8px;margin-bottom:10px}.field{width:100%;border:1px solid #dce4ef;border-radius:10px;padding:11px;background:white;color:var(--ink)}.task{display:flex;align-items:flex-start;gap:10px;padding:13px 0;border-bottom:1px solid var(--line)}.task:last-child{border-bottom:0}.task input{margin-top:4px;width:18px;height:18px;accent-color:var(--green)}.task-main{flex:1;min-width:0}.task-name{font-weight:650;overflow-wrap:anywhere}.task.done .task-name{text-decoration:line-through;color:#8b96a7}.meta{font-size:.82rem;color:var(--muted);margin-top:5px}.pill{font-size:.75rem;padding:4px 8px;border-radius:20px;display:inline-block;margin-left:5px}.high{background:#ffe5e7;color:#aa3946}.medium{background:#fff0cb;color:#8c6511}.low{background:#e5f5ed;color:#217b5b}.progress{height:9px;background:#edf1f7;border-radius:20px;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;background:linear-gradient(90deg,#31b18b,#76d7b3);width:0;transition:width .2s}.feature{border-radius:15px;padding:15px;margin-bottom:12px}.feature.mint{background:var(--mint)}.feature.lilac{background:var(--lilac)}.feature.pink{background:var(--pink)}.feature.gold{background:var(--gold)}.feature h3{margin:0 0 7px;font-size:1rem}.feature p{margin:0;color:#52627a;font-size:.9rem;line-height:1.5}.sleep-control{display:flex;align-items:center;gap:12px}.sleep-control input{width:100%;accent-color:var(--green)}.big-number{font-size:1.5rem;font-weight:800;color:var(--navy);white-space:nowrap}.stress-options{display:flex;gap:7px;flex-wrap:wrap}.stress-options button{background:#f0f3f9;color:#52627a;padding:9px 12px}.stress-options button.selected{background:var(--navy);color:white}.timer{text-align:center;background:var(--lilac);border-radius:18px;padding:24px}.timer .time{font-size:3.2rem;font-weight:800;color:#43388c;letter-spacing:2px}.timer-controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.notes-list{padding-left:20px}.note-item{padding:8px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.hidden{display:none!important}.footer{text-align:center;color:var(--muted);font-size:.83rem;padding:22px 8px}.empty{color:var(--muted);padding:16px 0}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#15345b;color:white;padding:12px 18px;border-radius:12px;display:none;box-shadow:0 6px 25px #0002;max-width:90vw}.toast.show{display:block}@media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.hero{align-items:flex-start}.hero-note{display:none}.formrow{grid-template-columns:1fr 1fr}.formrow input:first-child{grid-column:1/-1}}@media(max-width:430px){.app{padding:12px}.hero{padding:20px}.stats{gap:8px}.stat{padding:13px}.stat strong{font-size:1.4rem}.nav button{min-width:calc(50% - 8px)}.formrow{grid-template-columns:1fr}.formrow input:first-child{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+  <div class="brand"><div class="logo">✿</div><div><h1>Wellness & Bio-Sync</h1><p>Sincroniza tu estudio, tu salud y tu sueño.</p></div></div>
+  <div class="hero-note">🌿 Mejores hábitos, mejores resultados.</div>
+</header>
+<nav class="nav" aria-label="Navegación">
+  <button class="active" data-tab="inicio">⌂ Inicio</button><button data-tab="tareas">✓ Planificador</button><button data-tab="estudio">◷ Estudio</button><button data-tab="bienestar">♡ Bienestar</button>
+</nav>
+<section class="stats">
+  <div class="stat"><span class="label">Tareas completadas</span><strong id="statTasks">0/0</strong></div>
+  <div class="stat"><span class="label">Avance diario</span><strong id="statProgress">0%</strong></div>
+  <div class="stat"><span class="label">Sueño planificado</span><strong id="statSleep">8 h</strong></div>
+  <div class="stat"><span class="label">Estrés registrado</span><strong id="statStress">2/5</strong></div>
+</section>
+<main>
+<section id="tab-inicio" class="tab">
+  <div class="layout">
+    <div class="panel"><h2>Tu día, a tu ritmo</h2><p class="sub">Marca tus avances y concéntrate en lo importante.</p><div id="homeTasks"></div><div class="progress"><span id="progressBar"></span></div><p class="sub" id="progressText">Aún no hay tareas.</p><button onclick="showTab('tareas')">Organizar mis tareas</button></div>
+    <div>
+      <div class="feature mint"><h3>🌱 Consejo para hoy</h3><p>Elige hasta tres prioridades realistas. Estudiar mejor importa más que estudiar hasta agotarte.</p></div>
+      <div class="feature lilac"><h3>🌙 Tu descanso también cuenta</h3><p id="sleepAdvice">Planifica una hora de sueño suficiente y constante.</p></div>
+      <div class="feature gold"><h3>💡 Recuerda</h3><p>Haz pausas, bebe agua y pide apoyo si la carga académica se vuelve difícil de manejar.</p></div>
+    </div>
+  </div>
+</section>
+<section id="tab-tareas" class="tab hidden">
+  <div class="panel"><h2>Planificador académico</h2><p class="sub">Añade clases, tareas, exámenes y proyectos; ordénalos por prioridad.</p>
+    <form id="taskForm"><div class="formrow"><input id="taskName" class="field" placeholder="Ej. Repasar para el examen" required maxlength="120"><input id="taskTime" class="field" type="time" value="16:00" aria-label="Hora"><select id="taskPriority" class="field" aria-label="Prioridad"><option>Alta</option><option selected>Media</option><option>Baja</option></select></div><button type="submit">＋ Añadir tarea</button></form>
+    <div class="progress"><span id="taskProgressBar"></span></div><div id="taskList"></div>
+  </div>
+</section>
+<section id="tab-estudio" class="tab hidden">
+  <div class="layout">
+    <div class="panel"><h2>Temporizador Pomodoro</h2><p class="sub">Prueba 25 minutos de concentración y 5 minutos de descanso.</p><div class="timer"><div id="timerLabel">Tiempo de estudio</div><div class="time" id="timerDisplay">25:00</div><div class="timer-controls"><button id="timerStart">▶ Iniciar</button><button class="secondary" id="timerPause">Ⅱ Pausar</button><button class="secondary" id="timerReset">↺ Reiniciar</button></div></div><p class="sub" style="margin-top:14px">Cuando termine el bloque, levántate un momento, estira el cuerpo o toma agua.</p></div>
+    <div class="panel"><h2>Técnicas de aprendizaje</h2><div class="feature mint"><h3>🧠 Práctica de recuperación</h3><p>Cierra tus apuntes y responde preguntas de memoria.</p></div><div class="feature lilac"><h3>📅 Repetición espaciada</h3><p>Repasa el contenido en varios días, no todo la noche anterior.</p></div><div class="feature gold"><h3>🗺️ Mapas y esquemas</h3><p>Relaciona las ideas principales de forma visual.</p></div></div>
+  </div>
+</section>
+<section id="tab-bienestar" class="tab hidden">
+  <div class="layout">
+    <div class="panel"><h2>Registro de bienestar</h2><p class="sub">Ajusta tu plan de descanso y registra cómo te sientes.</p>
+      <label for="sleepRange"><strong>Horas de sueño que planeas</strong></label><div class="sleep-control"><input id="sleepRange" type="range" min="4" max="10" step=".5" value="8"><span id="sleepValue" class="big-number">8 h</span></div><p class="sub">La mayoría de los adultos necesita al menos 7 horas de sueño por noche.</p>
+      <h3>¿Qué nivel de estrés sientes?</h3><div class="stress-options" id="stressOptions"><button type="button" data-stress="1">1 · Bajo</button><button type="button" data-stress="2" class="selected">2</button><button type="button" data-stress="3">3 · Medio</button><button type="button" data-stress="4">4</button><button type="button" data-stress="5">5 · Alto</button></div>
+      <h3 style="margin-top:20px">¿Cómo está tu energía?</h3><select id="energySelect" class="field"><option>Muy baja</option><option>Baja</option><option selected>Bien</option><option>Alta</option></select><button id="saveWellness" style="margin-top:14px">Guardar registro</button><p id="wellnessSaved" class="sub" style="margin-top:12px"></p>
+    </div>
+    <div class="panel"><h2>Pequeños hábitos saludables</h2><div class="feature mint"><h3>😴 Sueño</h3><p>Intenta mantener horarios regulares y evita dejar tareas para la hora de dormir.</p></div><div class="feature pink"><h3>💗 Pausas y emociones</h3><p>Respira lentamente, descansa y conversa con alguien de confianza si te sientes sobrepasado.</p></div><div class="feature gold"><h3>🚶 Movimiento e hidratación</h3><p>Levántate entre bloques de estudio, muévete un poco y toma agua durante el día.</p></div></div>
+  </div>
+</section>
+</main>
+<div class="footer">Wellness & Bio-Sync · Prototipo académico de organización y bienestar.<br>Los datos se guardan en este navegador si el almacenamiento está disponible.</div>
+</div><div class="toast" id="toast" role="status"></div>
+<script>
+const $=id=>document.getElementById(id);
+let tasks=[];
+let stress=2, sleep=8, energy='Bien';
+let timerSeconds=25*60, timerInterval=null, timerMode='study';
+function notify(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2300)}
+function persist(){try{localStorage.setItem('biosync-tasks',JSON.stringify(tasks));localStorage.setItem('biosync-wellness',JSON.stringify({stress,sleep,energy}))}catch(e){}}
+function load(){try{tasks=JSON.parse(localStorage.getItem('biosync-tasks')||'[]');const w=JSON.parse(localStorage.getItem('biosync-wellness')||'null');if(w){stress=w.stress??2;sleep=w.sleep??8;energy=w.energy??'Bien'}}catch(e){tasks=[]}}
+function showTab(name){document.querySelectorAll('.tab').forEach(el=>el.classList.add('hidden'));$('tab-'+name).classList.remove('hidden');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+function taskMarkup(t){const cls=t.priority==='Alta'?'high':t.priority==='Media'?'medium':'low';return `<div class="task ${t.done?'done':''}"><input type="checkbox" aria-label="Completar tarea" ${t.done?'checked':''} onchange="toggleTask(${t.id},this.checked)"><div class="task-main"><div class="task-name">${escapeHTML(t.name)}</div><div class="meta">${t.time||'Sin hora'} <span class="pill ${cls}">${t.priority}</span></div></div><button class="danger" style="padding:7px 10px" onclick="deleteTask(${t.id})" aria-label="Eliminar tarea">×</button></div>`}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function renderTasks(){const list=$('taskList'),home=$('homeTasks');list.innerHTML=tasks.length?tasks.slice().sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99')).map(taskMarkup).join(''):'<div class="empty">Todavía no tienes tareas. Añade la primera arriba.</div>';home.innerHTML=tasks.length?tasks.slice(0,4).map(t=>`<div class="task ${t.done?'done':''}"><input type="checkbox" ${t.done?'checked':''} aria-label="Completar tarea" onchange="toggleTask(${t.id},this.checked)"><div class="task-main"><div class="task-name">${escapeHTML(t.name)}</div><div class="meta">${t.time||'Sin hora'}</div></div></div>`).join(''):'<div class="empty">Añade tareas para ver tu planificación aquí.</div>';const done=tasks.filter(t=>t.done).length,pct=tasks.length?Math.round(done/tasks.length*100):0;$('statTasks').textContent=`${done}/${tasks.length}`;$('statProgress').textContent=pct+'%';$('progressBar').style.width=pct+'%';$('taskProgressBar').style.width=pct+'%';$('progressText').textContent=tasks.length?`${done} de ${tasks.length} tareas completadas. Sigue a tu ritmo.`:'Aún no hay tareas.';renderWellness()}
+function toggleTask(id,val){tasks=tasks.map(t=>t.id===id?{...t,done:val}:t);persist();renderTasks()}
+function deleteTask(id){tasks=tasks.filter(t=>t.id!==id);persist();renderTasks();notify('Tarea eliminada')}
+$('taskForm').addEventListener('submit',e=>{e.preventDefault();const name=$('taskName').value.trim();if(!name)return;tasks.push({id:Date.now(),name,time:$('taskTime').value,priority:$('taskPriority').value,done:false});$('taskName').value='';persist();renderTasks();notify('Tarea añadida a tu plan')});
+function renderWellness(){$('statSleep').textContent=sleep+' h';$('statStress').textContent=stress+'/5';$('sleepRange').value=sleep;$('sleepValue').textContent=sleep+' h';$('energySelect').value=energy;$('sleepAdvice').textContent=sleep<7?'Intenta reservar más tiempo para dormir; evita recuperar tiempo de estudio a costa del descanso.':`Has previsto ${sleep} horas de sueño. Mantén una rutina que te permita descansar bien.`;document.querySelectorAll('[data-stress]').forEach(b=>b.classList.toggle('selected',Number(b.dataset.stress)===stress))}
+$('sleepRange').addEventListener('input',e=>{sleep=Number(e.target.value);$('sleepValue').textContent=sleep+' h'});
+$('stressOptions').addEventListener('click',e=>{const b=e.target.closest('[data-stress]');if(b){stress=Number(b.dataset.stress);renderWellness()}});
+$('saveWellness').addEventListener('click',()=>{energy=$('energySelect').value;persist();renderWellness();$('wellnessSaved').textContent=`Registro guardado: sueño previsto ${sleep} h · estrés ${stress}/5 · energía ${energy}.`;notify('Registro de bienestar guardado')});
+function updateTimer(){const m=String(Math.floor(timerSeconds/60)).padStart(2,'0'),s=String(timerSeconds%60).padStart(2,'0');$('timerDisplay').textContent=`${m}:${s}`;$('timerLabel').textContent=timerMode==='study'?'Tiempo de estudio':'Tiempo de descanso'}
+function startTimer(){if(timerInterval)return;timerInterval=setInterval(()=>{timerSeconds--;updateTimer();if(timerSeconds<=0){clearInterval(timerInterval);timerInterval=null;timerMode=timerMode==='study'?'break':'study';timerSeconds=(timerMode==='study'?25:5)*60;updateTimer();notify(timerMode==='break'?'¡Bloque terminado! Tómate 5 minutos de descanso.':'Descanso terminado. Cuando estés listo, comienza otro bloque.')}},1000)}
+$('timerStart').addEventListener('click',startTimer);$('timerPause').addEventListener('click',()=>{clearInterval(timerInterval);timerInterval=null;notify('Temporizador pausado')});$('timerReset').addEventListener('click',()=>{clearInterval(timerInterval);timerInterval=null;timerMode='study';timerSeconds=25*60;updateTimer();notify('Temporizador reiniciado')});
+load();renderTasks();renderWellness();updateTimer();
+</script>
+</body>
+</html>
